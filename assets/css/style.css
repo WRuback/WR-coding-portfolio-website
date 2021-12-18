@@ -74,6 +74,17 @@ article  h2 + * {
     padding:30px;
 }
 
+.projectBoxes {
+    display: flex;
+    flex-flow: row wrap;
+}
+.projectBoxes div {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(245, 232, 119);
+    margin: 20px;
+    flex: 1 1 200px;
+}
 @media screen and (max-width: 768px) {
     header{
         flex-direction: column;
