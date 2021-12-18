@@ -24,6 +24,7 @@ header h1{
 }
 header nav a + a::before {
     content:"⚪ ";
+    display: inline-block;
 }
 
 .hero{
@@ -46,3 +47,36 @@ header nav a + a::before {
     right: 10%;
     margin: 10px;
 }
+
+article {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin:20px auto;
+}
+article h2{
+    font-size: 200%;
+    border-right: 5px solid rgb(245, 232, 119);
+    padding: 30px 30px 20px 20px;
+    flex: 0 0 20%;
+}
+article  h2 + * {
+    padding:30px;
+}
+
+@media screen and (max-width: 768px) {
+    article{
+      flex-direction: column;
+      padding: 0px 30px;
+    }
+    article h2 {
+        border-right: none;
+        border-bottom: 5px solid rgb(245, 232, 119);
+    }
+  }
+  
+  /* @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  } */
