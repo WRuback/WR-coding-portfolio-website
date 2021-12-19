@@ -78,12 +78,39 @@ article  h2 + * {
     display: flex;
     flex-flow: row wrap;
 }
-.projectBoxes div {
+.projectBoxes button {
     width: 300px;
     height: 200px;
-    background-color: rgb(245, 232, 119);
+    border: 5px solid rgb(245, 232, 119);
     margin: 20px;
     flex: 1 1 200px;
+    position: relative;
+    transition: 0.25s ease-out;
+}
+.projectBoxes button div{
+    background-image: url("../images/Placeholder.png");
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    filter: saturate(50%);
+    transition: 0.25s ease-out;
+}
+.projectBoxes button p{
+    display: inline;
+    float:left;
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    padding: 5px;
+    background-color: rgb(245, 232, 119);
+    transition: 0.25s ease-out;
+}
+.projectBoxes button:hover, .projectBoxes button:hover p{
+    box-shadow: 0px 0px 10px rgb(245, 232, 119), inset 0px 0px 10px rgb(245, 232, 119);
+}
+.projectBoxes button:hover div{
+    filter: saturate(150%);
 }
 @media screen and (max-width: 768px) {
     header{
