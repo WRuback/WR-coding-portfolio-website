@@ -78,7 +78,7 @@ article  h2 + * {
     display: flex;
     flex-flow: row wrap;
 }
-.projectBoxes button {
+.projectBoxes a {
     width: 300px;
     height: 200px;
     border: 5px solid rgb(245, 232, 119);
@@ -87,7 +87,7 @@ article  h2 + * {
     position: relative;
     transition: 0.25s ease-out;
 }
-.projectBoxes button div{
+.projectBoxes a div{
     background-image: url("../images/Placeholder.png");
     background-position: center;
     background-size:cover;
@@ -96,20 +96,21 @@ article  h2 + * {
     filter: saturate(50%);
     transition: 0.25s ease-out;
 }
-.projectBoxes button p{
+.projectBoxes a p{
     display: inline;
     float:left;
     position: absolute;
     bottom: 10%;
     left: 0%;
     padding: 5px;
+    color:rgb(56, 26, 56);
     background-color: rgb(245, 232, 119);
     transition: 0.25s ease-out;
 }
-.projectBoxes button:hover, .projectBoxes button:hover p{
+.projectBoxes a:hover, .projectBoxes a:hover p{
     box-shadow: 0px 0px 10px rgb(245, 232, 119), inset 0px 0px 10px rgb(245, 232, 119);
 }
-.projectBoxes button:hover div{
+.projectBoxes a:hover div{
     filter: saturate(150%);
 }
 @media screen and (max-width: 768px) {
@@ -131,9 +132,3 @@ article  h2 + * {
         border-bottom: 5px solid rgb(245, 232, 119);
     }
   }
-  
-  /* @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  } */
