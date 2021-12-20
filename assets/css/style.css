@@ -73,6 +73,12 @@ article h2{
 article  h2 + * {
     padding:30px;
 }
+article h2 + p {
+    line-height: 150%;
+}
+article h2 + p br {
+    line-height: 200%;
+}
 
 .flip-right {
     flex-direction: row-reverse;
@@ -127,15 +133,13 @@ article  h2 + * {
 }
 .contact {
     display: flex;
-    justify-content: space-around;
-    align-self: center;
-    flex: 0 0 80%;
+    flex-flow: row wrap;
 }
 .contact a{
     text-decoration: underline;
     color:rgb(245, 232, 119);
     font-size: 125%;
-    margin: 20px 5px;
+    padding: 20px 5px;
 
 }
 footer {
@@ -157,9 +161,7 @@ footer {
         padding: 20px 0px;
         width: 100%;
     }
-    header nav a{
-        font-size: 105%;
-    }
+
     article{
       flex-direction: column;
       padding: 0px 30px;
@@ -181,7 +183,9 @@ footer {
         height: 200px;
         flex: 1 1 95%;
     }
-    .contact a{
-        font-size: 100%;
+  }
+  @media screen and (max-width: 450px) {
+    header nav a{
+        font-size: 105%;
     }
   }
