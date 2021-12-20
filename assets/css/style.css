@@ -63,10 +63,17 @@ header nav a + a::before {
     top: 0px;
     left: 0px;
     margin: 10px;
-    width: 250px;
-    height: 250px;
+    min-width: 250px;
+    max-width: 350px;
+    width: 45%;
+    /* aspect-ratio: 1 /1; */
+    /* height: 0; */
 }
-
+.hero #profile::before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
 .hero p {
     background-color:rgb(245, 232, 119);
     position: absolute;
@@ -133,7 +140,7 @@ article h2 + p {
     height: 400px;
 }
 .projectBoxes a div{
-    background-image: url("../images/Placeholder.png");
+    /* background-image: url("../images/Placeholder.png"); */
     background-position: center;
     background-size:cover;
     width: 100%;
@@ -150,6 +157,7 @@ article h2 + p {
     padding: 5px;
     color:rgb(56, 26, 56);
     background-color: rgb(245, 232, 119);
+    font-weight: bolder;
     transition: 0.25s ease-out;
 }
 .projectBoxes a:hover, .projectBoxes a:hover p{
@@ -158,6 +166,13 @@ article h2 + p {
 .projectBoxes a:hover div{
     filter: saturate(150%);
 }
+#refactor div {
+    background-image: url("../images/Refactor.png");
+}
+.coming-soon div{
+    background-image: url("../images/ComingSoon.jpg");
+}
+
 .contact {
     display: flex;
     flex-flow: row wrap;
@@ -169,6 +184,7 @@ article h2 + p {
     padding: 20px 5px;
 
 }
+
 footer {
     background-color:rgb(104, 34, 104);
     display: flex;
