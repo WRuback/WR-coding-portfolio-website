@@ -79,13 +79,18 @@ article  h2 + * {
     flex-flow: row wrap;
 }
 .projectBoxes a {
-    width: 300px;
+    width: 200px;
     height: 200px;
     border: 5px solid rgb(245, 232, 119);
     margin: 20px;
-    flex: 1 1 200px;
+    flex: 1 1 42%;
     position: relative;
     transition: 0.25s ease-out;
+}
+.projectBoxes .big-work {
+    width: 95%;
+    flex: 2 1 95%;
+    height: 400px;
 }
 .projectBoxes a div{
     background-image: url("../images/Placeholder.png");
@@ -130,5 +135,10 @@ article  h2 + * {
     article h2 {
         border-right: none;
         border-bottom: 5px solid rgb(245, 232, 119);
+    }
+    .projectBoxes .big-work {
+        width: 95%;
+        height: 200px;
+        flex: 1 1 95%;
     }
   }
