@@ -1,3 +1,4 @@
+/* These variables make adjusting the color of the webpage easier. */
 :root {
     --main-color-dark: rgb(56, 26, 56);
     --main-color-light: rgb(104, 34, 104);
@@ -14,7 +15,7 @@ body {
 }
 
 
-/* Header Section. Flex is used for genral spacing, and to make size changes easier. */
+/* Header Section. Flex is used for general spacing, and to make size changes easier. */
 header{
     background-color: var(--main-color-light);
     padding:20px;
@@ -41,8 +42,8 @@ header nav a{
     font-size: 135%;
     text-decoration: none;
 }
-/* The + is used to add the circles to only the a tags that have an a tag before it. */
-/* This makes it so the circles only appear between the a tags, not around them. */
+/* The + is used to add the circles to only the <a> tags that have an <a> tag before it. */
+/* This makes it so the circles only appear between the <a> tags, not around them. */
 /* The whitespace is used to maintain consistent spacing between the links. */
 header nav a + a::before {
     content:" ● ";
@@ -68,7 +69,7 @@ header nav a + a::before {
     height: 100%;
     position: relative;
 }
-/* The profile image will shrink as the page gets smaller, with the min and max set to bound it. */
+/* The profile image will shrink as the page gets smaller, with the min and max set to bound it to stay within the hero and not cover the nameplate. */
 .hero #profile {
     background-image: url("../images/ProfileIMG.jpg");
     background-position: center;
@@ -254,12 +255,12 @@ footer {
     header h1 {
         margin-top: 20px;
     }
-    /* This changes the nav bar to be a font size base on the width to keep the horizontal presentation. */
+    /* This changes the nav bar to be a font size based on the width, in order to keep the horizontal presentation. */
     header nav a{
         font-size: 4.3vw;
     }
 
-    /* This section set the profile image and nameplate to be vertically centered for modile screens. */
+    /* This section set the profile image and nameplate to be vertically centered for mobile screens. */
     .hero .profile-bounds{
         display: flex;
         flex-direction: column;
