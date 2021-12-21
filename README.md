@@ -21,6 +21,6 @@ Desktop Version:
 ![desktop-screenshot](README-assets/desktop-portfolio.png)
 
 
-Modile Version:
+Mobile Version:
 
 ![mobile-version](README-assets/mobile-portfolio.png)
