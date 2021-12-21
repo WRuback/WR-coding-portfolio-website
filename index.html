@@ -4,7 +4,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- I did not have much time this week, so the portfolio is based heavily on the example images. -->
+        <!-- A more proper, original portfolio will be made later. -->
         <title>Practice Portfolio WR</title>
+        <!-- Reset added to make the webpage standard on most browsers. -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
@@ -13,6 +16,8 @@
         <header>
             <h1>Ruback</h1>
             <nav>
+                <!-- Nav links go to the sections on the page, while resume links to a folder with a placeholder resume. -->
+                <!-- Resume is included to match the example. -->
                 <a href="#AboutMe">About Me</a>
                 <a href="#Work">Work</a>
                 <a href='#Contact'>Contact Me</a>
@@ -20,19 +25,26 @@
             </nav>
         </header>
         <section class="hero">
+            <!-- Profile bounds section included to keep the profile image and nameplate near the center of the screen in full desktop layouts. -->
+            <!-- Section tags used here as the others didn't match that well. -->
             <section class="profile-bounds">
                 <section id="profile"></section>
-                <p> William Ruback</p>
+                <p>William Ruback</p>
             </section>
         </section>
         <main>
+            <!-- The article tag was used for each section as it felt that each section was kinda a writeup, and it matched the closest in the semantic tags. -->
             <article id="AboutMe">
                 <h2>About Me</h2>
                 <p>Hello! My name is William Ruback. <br><br> I am currently learning full stack web development thanks to the UCF Coding Bootcamp program. I am becoming proficient in the use of HTML, CSS, and Javascript for the use of front-end web development, and will soon be learning server backend as well. <br><br> In addition, I am also proficient in designing motion graphics and visuals effects with after effects, 3D work with blender, and photo editing with Adobe Photoshop. I also have video editing experience using Adobe Premerie Pro, and additional experience working on professional sets as a grip. <br><br> Below are some examples of my web development work. More will be coming soon!</p>
             </article>
+            <!-- The flip right class was added to spin this section around. -->
             <article id="Work" class="flip-right">
                 <h2>Work</h2>
                 <section class="projectBoxes">
+                    <!-- The extra div is added to be the image backgorund. -->
+                    <!-- Not an img tag, as the background-image CSS has better centering and cropping options. -->
+                    <!-- background-image has it's own div to put the saturation filter only on it. -->
                     <a href="https://github.com/WRuback/code-refactoring-project" target="_blank" class="big-work" id="refactor">
                         <div></div>
                         <p>Code Refactoring</p>
@@ -58,6 +70,9 @@
             <article id="Contact">
                 <h2>Contact Me</h2>
                 <section class = "contact">
+                    <!-- The phone number and email are added to match the example. -->
+                    <!-- They are links to make format matching easier. -->
+                    <!-- I would not include my phone number on a public facing website, but that was the example! -->
                     <a>555-555-5555</a>
                     <a>myemail@email.com</a>
                     <a href="https://github.com/WRuback">Github</a>
