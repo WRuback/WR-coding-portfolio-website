@@ -148,7 +148,7 @@ article h2 + p {
     display: flex;
     flex-flow: row wrap;
 }
-.projectBoxes a {
+.project-button{
     width: 200px;
     height: 200px;
     border: 5px solid var(--alt-color);
@@ -164,38 +164,48 @@ article h2 + p {
     flex: 2 1 95%;
 }
 /* Picture on separate div to have the saturation effect only apply to itself. */
-.projectBoxes a div{
+.project-button a{
+    position: relative;
+}
+.main div{
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 75%;
     filter: saturate(25%);
     transition: 0.25s ease-out;
 }
-.projectBoxes a p{
+.sub div{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 25%;
+    filter: saturate(25%);
+    transition: 0.25s ease-out;
+}
+.project-button p{
     background-color: var(--alt-color);
     padding: 5px;
     color: var(--main-color-dark);
     font-weight: bolder;
     display: inline;
-    float: left;
     position: absolute;
-    bottom: 10%;
+    top: 10%;
     left: 0%;
     transition: 0.25s ease-out;
 }
 /* These are the changes on the object when hovered/selected. Adds a glow, and re-saturates the picture. */
-.projectBoxes a:hover, .projectBoxes a:hover p{
+.project-button:hover, .project-button a:hover p{
     box-shadow: 0px 0px 10px var(--alt-color), inset 0px 0px 10px var(--alt-color);
 }
-.projectBoxes a:hover div{
+.project-button a:hover div{
     filter: saturate(150%);
 }
 /* The ID's add the specific image for each link. */
 #refactor div {
     background-image: url("../images/Refactor.png");
 }
-.coming-soon div{
+.github div{
     background-image: url("../images/ComingSoon.jpg");
 }
 
