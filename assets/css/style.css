@@ -156,6 +156,7 @@ article h2 + p {
     flex: 1 1 42%;
     position: relative;
     transition: 0.25s ease-out;
+    border-radius: 0px 20px 40px 20px;
 }
 .project-button::after{
     content: "";
@@ -186,6 +187,7 @@ article h2 + p {
     height: 75%;
     filter: saturate(25%);
     transition: 0.25s ease-out;
+    border-radius: 0px 15px 0px 0px;
 }
 .sub div{
     background-position: center;
@@ -194,11 +196,13 @@ article h2 + p {
     height: 25%;
     filter: saturate(25%);
     transition: 0.25s ease-out;
+    border-radius: 0px 0px 35px 15px;
 }
 .project-button p{
     background-color: var(--alt-color);
     padding: 5px;
     color: var(--main-color-dark);
+    font-size: 125%;
     font-weight: bolder;
     display: inline;
     position: absolute;
