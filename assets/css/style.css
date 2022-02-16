@@ -227,11 +227,11 @@ article h2 + p {
 #weather div {
     background-image: url("../images/WeatherDashboard.png");
 }
-#quiz div {
-    background-image: url("../images/QuizGame.png");
+#dewi div {
+    background-image: url("../images/Dewi.png");
 }
-#password div {
-    background-image: url("../images/PasswordGen.png");
+#techblog div {
+    background-image: url("../images/TechBlog.png");
 }
 .github div{
     background-image: url("../images/ComingSoon.jpg");
